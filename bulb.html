@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+    <title>JS BULB</title>
+</head>
+<body>
+    <style>
+        
+        body {
+          background-image: url('https://t4.ftcdn.net/jpg/03/04/50/23/240_F_304502331_FzmLxm4YbgCett3DJrgfvjsbJsrUwZ51.jpg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+        }
+    </style>
+    <center>
+        <img id="myImage" onclick="changeImage()" src="https://www.w3schools.com/js/pic_bulboff.gif" width="100" height="180">
+    </center>
+    <h1 style="color: aqua;">ABOUT BULB</h1>
+    <h3><p style="color: yellow;">*An electronic bulb is a small and simple light source that uses a wire filament to glow on the application of electricity.<br>* The structure of incandescent light bulbs is shown in the figure below.<br>* The filament, which is a coiled thin wire, is made of tungsten.</p></h3>
+    <br>
+    <h1><p style="color: rgb(0, 255, 136);">Parts of Bulb</p></h1>
+    <ul>
+        <h2 style="color: rgba(41, 230, 255, 0.849);">
+            <li>Glass bulb</li>
+            <li>Inert gas</li>
+            <li>Tungsten filament</li>
+            <li>Contact wire (goes to foot)</li>
+            <li>Contact wire (goes to base)</li>
+            <li>Support wires</li>
+            <li>Glass mount/support</li>
+            <li>Glass mount/support</li></h2>
+        </ul>
+    <script>
+        function changeImage(){
+            var image=document.getElementById('myImage');
+if (image.src.match("bulbon")) {
+    image.src = "https://www.w3schools.com/js/pic_bulboff.gif";
+} 
+else {
+    image.src = "https://www.w3schools.com/js/pic_bulbon.gif";
+}
+
+        }
+    </script>
+
+
+
+
+
+</body>
+</html>
